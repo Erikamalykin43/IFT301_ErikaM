@@ -1,0 +1,327 @@
+/*! CSS Used from: https://tisaconundrum2.github.io/IFT301/assets/css/screen.css */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    margin-left: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, nav {
+    display: block;
+}
+
+body {
+    text-align: center;
+}
+
+body {
+    font-size: 18px;
+    word-spacing: 1px;
+    line-height: 26px;
+    font-family: "freightsans_regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+}
+
+#page-border {
+    background: #F5F5F5;
+    margin: 20px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.grid-2, .grid-14 {
+    float: left;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    max-width: 100%;
+}
+
+.grid-2.center, .grid-14.center {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 1120px;
+}
+
+.grid-2 {
+    width: 120px;
+}
+
+.grid-14 {
+    width: 960px;
+}
+
+#wrap {
+    padding: 20px 0;
+}
+
+p, hr {
+    margin-top: 1em;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+a {
+    -moz-transition: all 275ms;
+    -o-transition: all 275ms;
+    -webkit-transition: all 275ms;
+    transition: all 275ms;
+    cursor: pointer;
+    text-decoration: none;
+    color: #181818;
+    border-bottom: 1px solid #16a6b6;
+}
+
+a:hover, a:focus, a:active {
+    color: #16a6b6;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #C5C5C5;
+}
+
+.logo-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#nav {
+    margin-top: 20px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+#nav a {
+    border-color: #6a6a65;
+    padding-bottom: 5px;
+    display: block;
+}
+
+#nav a:hover, #nav a:active, #nav a:focus {
+    border-color: #16a6b6;
+}
+
+#nav p {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: middle;
+    width: 110px;
+    margin: 0 10px;
+}
+
+#nav p.alpha {
+    margin-left: 0;
+}
+
+#nav p.omega {
+    margin-right: 0;
+}
+
+.logo {
+    margin-top: -25px;
+    text-indent: -999em;
+}
+
+.logo a {
+    padding: 0;
+    border: none;
+}
+
+.logo a img {
+    display: block;
+    height: auto;
+}
+
+html body .mq-mobile, html body .mq-mid-i-block, html body .mq-small-i-block {
+    display: none !important;
+}
+
+html body .mq-wide-i-block {
+    display: inline-block !important;
+    *display: inline !important;
+}
+
+@media screen and (max-width: 1180px) {
+    html body .mq-mobile, html body .mq-wide-i-block, html body .mq-small-i-block {
+        display: none !important;
+    }
+
+    html body .mq-mid-i-block {
+        display: inline-block !important;
+        *display: inline !important;
+    }
+
+    .container {
+        width: 960px;
+    }
+
+    #nav p {
+        width: 108px;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    html body .mq-mobile, html body .mq-wide-i-block, html body .mq-mid-i-block {
+        display: none !important;
+    }
+
+    html body .mq-small-i-block {
+        display: inline-block !important;
+        *display: inline !important;
+    }
+
+    .container {
+        width: 984px;
+    }
+
+    .grid-2 {
+        width: 103px;
+    }
+
+    .grid-14 {
+        width: 841px;
+    }
+
+    .container {
+        width: 840px;
+    }
+
+    #nav p {
+        width: 87px;
+    }
+
+    #nav p.logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 898px) {
+    .container {
+        width: 90%;
+    }
+
+    .grid-2, .grid-14 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    html body .mq-wide-i-block, html body .mq-mid-i-block, html body .mq-small-i-block {
+        display: none !important;
+    }
+
+    html body .mq-mobile {
+        display: block !important;
+    }
+
+    .section {
+        margin-top: 115px;
+    }
+
+    hr.center.grid-2 {
+        width: 120px;
+    }
+
+    #nav {
+        font-size: 0;
+        width: 320px;
+    }
+
+    #nav p {
+        width: auto;
+        font-size: 20px;
+        word-spacing: 1px;
+        line-height: 32px;
+    }
+
+    #nav p.text-left, #nav p.text-right {
+        text-align: center !important;
+    }
+
+    #nav p.logo {
+        margin-bottom: 15px;
+        width: 120px;
+    }
+
+    #nav p, #nav p.alpha, #nav p.omega {
+        margin: 0;
+    }
+
+    #nav a {
+        padding: 0 10px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #page-border {
+        margin: 14px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #nav p {
+        font-size: 19px;
+    }
+
+    #nav a {
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.fonts-display {
+    font-family: "freightsans_regular", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.clearfix, .container {
+    *zoom: 1;
+}
+
+.clearfix:after, .container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
